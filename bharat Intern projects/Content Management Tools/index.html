@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Management Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content-container">
+        <div class="content-entry">
+            <h1>Create and Manage Content</h1>
+            <div class="input-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title">
+            </div>
+            <div class="input-group">
+                <label for="content">Content:</label>
+                <textarea id="content"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="file">Upload Image/Video:</label>
+                <input type="file" id="file" accept="image/*, video/*">
+            </div>
+            <button id="add-content">Add Content</button>
+            <button id="publish-content">Publish</button>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="content-display">
+            <h2>Blog Posts</h2>
+            <ul id="content-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
